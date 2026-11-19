@@ -119,6 +119,8 @@ def test_a_record_not_held_is_reported_missing_and_waits(tmp_path: Path) -> None
     asyncio.run(work.check())
     missed = {i.value for p in plugin.on("ReportMissingInstrument") for i in p.identifiers}
     assert missed == {"Cash Rate Target"} and not rates_of(plugin, HELD["Cash Rate Target"])
+    # The third parties' records are resolved at a check, though pulled only.
+    assert work.status.records["OIS"].instrument_id == HELD["OIS"]
     # F1 is asked whole again while its record waits; the rest answer 304.
     assert portal.asked.count(PATHS["F1"]) == 2
 

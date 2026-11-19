@@ -455,7 +455,15 @@ class Feed(data.Role):
             log.info(
                 "%s read to %s%s", table, latest, f"; not held: {unresolved}" * bool(unresolved)
             )
+        await self.resolve_pulled()
         return done
+
+    async def resolve_pulled(self) -> None:
+        """The records of the third parties' columns, read only when wanted,
+        resolved so a want can name them, as the rest are by recording."""
+        for column in RATE_COLUMNS.values():
+            if column.dataset == RESTRICTED:
+                await self.record_of(column.record)
 
     # ── Wants ───────────────────────────────────────────────────────────
 
