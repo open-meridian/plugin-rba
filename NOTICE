@@ -1,0 +1,12 @@
+meridian-rba
+Copyright 2026 Societal Lab Inc.
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+The data this plugin reads are the Reserve Bank of Australia's, published in
+its statistical tables F1, F2, F17 and F11.1. Source: Reserve Bank of
+Australia 2026. Some columns are third parties' content -- F1's BABs/NCDs
+(ASX), F1's OIS (FENICS) and F11.1's A$1=USD (WM/Reuters) -- whose use needs
+the third party's consent.
+This project is not affiliated with or endorsed by the Reserve Bank of
+Australia.
