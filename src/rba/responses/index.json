@@ -1,0 +1,7 @@
+{
+  "said": "The Reserve Bank of Australia's real responses, recorded by meridian-rba's authors on 2026-11-19: its statistical tables F1 (money market, 4 January 2011 to 19 November 2026), F2 (government bond yields, daily, 20 May 2013 to 11 November 2026), F17 (zero-coupon yields, 3 January 2017 to 30 October 2026) and F11.1 (exchange rates, daily, 3 January 2023 to 19 November 2026), each CSV as received, gzipped. The RBA's statistical data are under its own terms; F1's BABs/NCDs columns are ASX's, its OIS columns FENICS's, and F11.1's A$1=USD WM/Reuters', third-party material whose use needs the third party's consent (https://www.rba.gov.au/copyright/). Sample data answers each request from them, and the tests read them.",
+  "F1": {"file": "f1-data-20261119.csv.gz", "date": "Thu, 19 Nov 2026 16:40:52 GMT", "last_modified": "Wed, 18 Nov 2026 21:57:57 GMT", "last_day": "2026-11-19"},
+  "F2": {"file": "f2-data-20261119.csv.gz", "date": "Thu, 19 Nov 2026 16:40:55 GMT", "last_modified": "Fri, 13 Nov 2026 02:44:00 GMT", "last_day": "2026-11-11"},
+  "F17": {"file": "f17-yields-20261119.csv.gz", "date": "Thu, 19 Nov 2026 16:40:57 GMT", "last_modified": "Fri, 06 Nov 2026 03:31:59 GMT", "last_day": "2026-10-30"},
+  "F11.1": {"file": "f11.1-data-20261119.csv.gz", "date": "Thu, 19 Nov 2026 16:41:15 GMT", "last_modified": "Thu, 19 Nov 2026 05:39:59 GMT", "last_day": "2026-11-19"}
+}
