@@ -1,10 +1,5 @@
 # Changelog
 
-## 0.1.1
-
-SDK 0.37.0: waits for a lost sidecar; its storage is read once registered,
-on an instance run as shards or with a standby pod the shard's own folder.
-
 ## 0.1.0
 
 On open-meridian 0.36.0, contract 30, on core aae501d's harness. The
@@ -36,3 +31,8 @@ to approve.
 - **Sample data:** the four tables recorded on 2026-11-19, the RBA's own
   columns as received; the third parties' columns (BABs/NCDs, OIS, A$1=USD,
   the SDR) synthetic, invented by a seeded generator in the same shape.
+
+SDK 0.37.0: waits for a lost sidecar; its storage is read once registered,
+on an instance run as shards or with a standby pod the shard's own folder.
+
+SDK 0.37.1: a raw record kept from two threads at once waits instead of being dropped.
